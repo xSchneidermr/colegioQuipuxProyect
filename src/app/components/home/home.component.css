@@ -1,0 +1,387 @@
+p {
+  font-family: "Montserrat";
+  text-transform: none;
+}
+
+/* Estilos para el encabezado */
+.header {
+  background-color: #fff;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el logo */
+.logo {
+  width: 160px;
+  height: 30px;
+  display: block;
+  margin-left: 30px;
+}
+
+/* Estilos para el contenedor de usuario */
+.user-container {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+/* Estilos para el nombre del usuario */
+.nombre {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  color: #697075;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+/* Estilos para el ícono de usuario */
+.user-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  align-self: center;
+}
+
+/* Estilos para el contenedor de la aplicación */
+.container {
+  display: flex;
+  height: 100%;
+}
+
+/* Estilos para la navegación lateral */
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  width: 250px;
+  background-color: #6a737c;
+  color: #f2f2f3;
+}
+
+/* Estilos para la lista de navegación */
+.lista {
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilos para los elementos de la lista de navegación */
+.nav-li {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  color: #F2F2F3;
+  letter-spacing: 0;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.nav-liv {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  color: #555A5E;
+  letter-spacing: 0;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+/* Estilos para el elemento seleccionado */
+.selected {
+  background-color: #c8ccd0;
+  width: 230px;
+}
+
+/* Estilos para el contenedor principal */
+.main-container {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: calc(100% - 250px);
+}
+
+/* Estilos para el contenedor del texto */
+.text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+/* Estilos para el título */
+.text-title {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 16px;
+  color: #555555;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-left: 25px;
+}
+
+/* Estilos para el boton */
+.btn {
+  top: 77px;
+  left: 1171px;
+  width: 164px;
+  height: 35px;
+  border: 1px solid var(--primary-009cde);
+  border: 1px solid #009CDE;
+  border-radius: 5px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Estilos para el ícono del botón */
+.btn-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+/* Estilos para el texto del botón */
+.btn-text {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  color: #009DE0;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: relative;
+  top: -4px;
+}
+
+/* Estilos para el contenedor de los filtros */
+.rectangule {
+  width: calc(100% - 50px);
+  height: 87px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 5px -3px rgba(50, 50, 50, 0.2);
+}
+
+/* Estilos para poner los textos en fila */
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Estilos para el div que agrupa los select */
+.select-group {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  color: #545454;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-left: 20px;
+}
+
+/* Estilos para los multi select */
+.multiSelect {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  color: #6A737C;
+  letter-spacing: 0;
+  line-height: 18px;
+  width: 71px;
+  height: 35px;
+  border-color: #9fa6ad;
+  border-radius: 3px;
+}
+
+/* Estilos para los select */
+.multiSelect:focus {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  color: #6A737C;
+  letter-spacing: 0;
+  line-height: 18px;
+  width: 171px;
+  height: 35px;
+  border-color: #9fa6ad;
+  border-radius: 3px;
+}
+
+/* Estilos para los select */
+.select {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  color: #6A737C;
+  letter-spacing: 0;
+  line-height: 18px;
+  width: 245px;
+  height: 35px;
+  border-color: #9fa6ad;
+  border-radius: 3px;
+}
+
+/* Estilos para el boton de busqueda */
+.search-btn {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  color: #FCFCFC;
+  letter-spacing: 0;
+  line-height: 18px;
+  background-color: #009DE0;
+  width: 80px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 20px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+/* Estilos para el link */
+.link {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  color: #009CDE;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 20px;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el contenedor de la tabla */
+.table-container {
+  width: calc(100% - 50px);
+  height: calc(100% - 200px);
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 5px -3px rgba(50, 50, 50, 0.2);
+  margin-bottom: 70px;
+}
+
+/* Estilos para el subtitulo */
+.subtitle {
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  color: #555555;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+
+/* Estilos para la tabla */
+.table {
+  width: calc(100% - 40px);
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 300px;
+  border-collapse: collapse;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.acc{
+  text-align: center;
+}
+
+th{
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 18px;
+  padding: 10px;
+  text-align: left;
+}
+
+td{
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  color: #2C2C2C;
+  letter-spacing: 0;
+  line-height: 18px;
+  padding: 10px;
+  text-align: left;
+}
+
+tr:first-child {
+  background-color: #016691;
+  color: #ffffff;
+}
+
+tr:nth-child(even):not(:first-child) {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(odd):not(:first-child) {
+  background-color: #fff;
+}
+
+.table-icn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-btn {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+  border-color: #555555;
+  border-width: 1px;
+  color: #555555;
+  cursor: pointer;
+  margin-left: 20px;
+  cursor: pointer;
+  align-self: flex-end;
+}

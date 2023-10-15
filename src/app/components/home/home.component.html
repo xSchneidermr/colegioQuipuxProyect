@@ -1,0 +1,225 @@
+<body class="main">
+    <header class="header">
+      <img src="assets/quipux.png" alt="estudiante" class="logo" />
+      <div class="user-container">
+        <p class="nombre">Carolina Fernández Echeverry</p>
+        <img src="assets/user-circle.svg" alt="estudiante" class="user-icon" />
+      </div>
+    </header>
+    <div class="container">
+      <aside class="nav">
+        <ul class="lista">
+          <li
+            class="nav-li"
+            (click)="selectItem('Estudiantes')"
+            [class.selected]="selectedItem === 'Estudiantes'"
+          >
+            Estudiantes
+          </li>
+          <li
+            class="nav-li"
+            (click)="selectItem('Grupos')"
+            [class.selected]="selectedItem === 'Grupos'"
+          >
+            Grupos
+          </li>
+          <li
+            class="nav-liv"
+            (click)="selectItem('Materias')"
+            [class.selected]="selectedItem === 'Materias'"
+          >
+            Materias
+          </li>
+          <li
+            class="nav-li"
+            (click)="selectItem('Evaluaciones')"
+            [class.selected]="selectedItem === 'Evaluaciones'"
+          >
+            Evaluaciones
+          </li>
+          <li
+            class="nav-li"
+            (click)="selectItem('Informes')"
+            [class.selected]="selectedItem === 'Informes'"
+          >
+            Informes
+          </li>
+        </ul>
+      </aside>
+      <main class="main-container">
+        <div class="text-container">
+          <h1 class="text-title">Administración de materias</h1>
+          <button class="btn" (click)="openMaterias()">
+            <img src="assets/add.png" 
+                 alt="add" 
+                 class="btn-icon"
+                  />
+            <span class="btn-text">Nuevo Registro</span>
+          </button>
+        </div>
+        <div class="rectangule">
+          <div class="row">
+            <div class="select-group">
+              <p>Grado</p>
+              <select class="multiSelect">
+                <option value="" disabled selected hidden></option>
+                <option value="1">Opción 1</option>
+                <option value="2">Opción 2</option>
+                <option value="3">Opción 3</option>
+                <option value="4">Opción 4</option>
+              </select>
+            </div>
+            <div class="select-group">
+              <p>Grupo</p>
+              <select class="multiSelect">
+                <option value="" disabled selected hidden></option>
+                <option value="1">Opción 1</option>
+                <option value="2">Opción 2</option>
+                <option value="3">Opción 3</option>
+                <option value="4">Opción 4</option>
+              </select>
+            </div>
+            <div class="select-group">
+              <p>Materia</p>
+              <select class="select">
+                <option value="" disabled selected hidden>Seleccionar</option>
+                <option value="1">Opción 1</option>
+                <option value="2">Opción 2</option>
+                <option value="3">Opción 3</option>
+                <option value="4">Opción 4</option>
+              </select>
+            </div>
+            <div class="select-group">
+              <p>Profesor</p>
+              <select class="select">
+                <option value="" disabled selected hidden>Seleccionar</option>
+                <option value="1">Opción 1</option>
+                <option value="2">Opción 2</option>
+                <option value="3">Opción 3</option>
+                <option value="4">Opción 4</option>
+              </select>
+            </div>
+            <button class="search-btn">Buscar</button>
+            <a class="link">Limpiar filtros</a>
+          </div>
+        </div>
+        <div class="table-container">
+          <h3 class="subtitle">Resultados</h3>
+          <table class="table">
+            <tr>
+              <th>Código</th>
+              <th>Materia</th>
+              <th>Profesor</th>
+              <th>Grado</th>
+              <th class="acc">Acciones</th>
+            </tr>
+            <tr>
+              <td>SOC001</td>
+              <td>Geografía</td>
+              <td>Fabio León Restrepo</td>
+              <td>6, 7, 8, 9, 10, 11</td>
+              <td>
+                <div class="table-icn-container">
+                  <button class="table-btn" (click)="openMaterias()">
+                    <img
+                      src="assets/ic-show.svg"
+                      alt="edit"
+                      class="table-icon"
+                    />
+                  </button>
+                  <button class="table-btn" (click)="openDialog()">
+                    <img
+                      src="assets/ic-trash.svg"
+                      alt="edit"
+                      class="table-icon"
+                    />
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>SOC002</td>
+              <td>Historia</td>
+              <td>Jaime Alberto Giraldo</td>
+              <td>6, 7, 8</td>
+              <td>
+                <div class="table-icn-container">
+                  <button class="table-btn">
+                    <img src="assets/ic-show.svg" alt="edit" class="table-icon" />
+                  </button>
+                  <button class="table-btn">
+                    <img
+                      src="assets/ic-trash.svg"
+                      alt="edit"
+                      class="table-icon"
+                    />
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>SOC003</td>
+              <td>Filosofía</td>
+              <td>Adriana María Zuluaga</td>
+              <td>9, 10, 11</td>
+              <td>
+                <div class="table-icn-container">
+                  <button class="table-btn">
+                    <img src="assets/ic-show.svg" alt="edit" class="table-icon" />
+                  </button>
+                  <button class="table-btn">
+                    <img
+                      src="assets/ic-trash.svg"
+                      alt="edit"
+                      class="table-icon"
+                    />
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>IDM001</td>
+              <td>Español</td>
+              <td>Fabiola Ramírez</td>
+              <td>6, 7, 8, 9, 10, 11</td>
+              <td>
+                <div class="table-icn-container">
+                  <button class="table-btn">
+                    <img src="assets/ic-show.svg" alt="edit" class="table-icon" />
+                  </button>
+                  <button class="table-btn">
+                    <img
+                      src="assets/ic-trash.svg"
+                      alt="edit"
+                      class="table-icon"
+                    />
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>IDM003</td>
+              <td>Inglés</td>
+              <td>María Dolores Smicth</td>
+              <td>6, 7, 8, 9, 10, 11</td>
+              <td>
+                <div class="table-icn-container">
+                  <button class="table-btn">
+                    <img src="assets/ic-show.svg" alt="edit" class="table-icon" />
+                  </button>
+                  <button class="table-btn">
+                    <img
+                      src="assets/ic-trash.svg"
+                      alt="edit"
+                      class="table-icon"
+                    />
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+  
